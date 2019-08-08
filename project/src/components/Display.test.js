@@ -12,4 +12,8 @@ describe('<Display />', () => {
         const display = render(<Display />);
         display.getByText(/strikes/i);
     })
+    it('should render the string `fouls`', () => {
+        const display = render(<Display />);
+        display.getByText(/fouls/i);
+    })
 })
