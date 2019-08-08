@@ -10,7 +10,7 @@ const DisplayCards = styled.section`
 
 const DisplayCard = styled.div`
     height: 300px;
-    width: 30%;
+    width: 25%;
     background: #202020;
     display: flex;
     flex-direction: column;
@@ -44,6 +44,10 @@ const Display = props => {
             <DisplayCard>
                 <DisplayHeading>Balls</DisplayHeading>
                 <DisplayValue>{props.balls}</DisplayValue>
+            </DisplayCard>
+            <DisplayCard>
+                <DisplayHeading>Fouls</DisplayHeading>
+                <DisplayValue>{props.fouls}</DisplayValue>
             </DisplayCard>
         </DisplayCards>
     )

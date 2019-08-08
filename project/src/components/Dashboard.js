@@ -14,16 +14,21 @@ const Button = styled.button`
     border: 1px solid black;
     border-radius: 5px;
     padding: 1rem 1.5rem;
+
+    :hover {
+        background: gray;
+        cursor: pointer;
+    }
 `;
 
 
-const Dashboard = () => {
+const Dashboard = props => {
     return (
         <Buttons>
-            <Button>Strike</Button>
-            <Button>Ball</Button>
-            <Button>Foul</Button>
-            <Button>Hit</Button>
+            <Button onClick={props.addStrike}>Strike</Button>
+            <Button onClick={props.addBall}>Ball</Button>
+            <Button onClick={props.addFoul}>Foul</Button>
+            <Button onClick={props.resetValues}>Hit</Button>
         </Buttons>
     )
 }
