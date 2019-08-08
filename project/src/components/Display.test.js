@@ -8,4 +8,8 @@ describe('<Display />', () => {
         const display = render(<Display />);
         display.getByText(/balls/i);
     })
+    it('should render the string `strikes`', () => {
+        const display = render(<Display />);
+        display.getByText(/strikes/i);
+    })
 })
