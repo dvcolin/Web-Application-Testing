@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Display strikes={strikes} balls={balls} />
+      <Dashboard />
     </div>
   );
 }
